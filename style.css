@@ -156,22 +156,22 @@ li {
 .category__1 {
   height: 542px;
   width: 560px;
-  background-image: url('img/forman.png')
+  background-image: url("img/forman.png");
 }
 .category__2 {
   height: 261px;
   width: 560px;
-  background-image: url('img/forwoman.png')
+  background-image: url("img/forwoman.png");
 }
 .category__3 {
   height: 261px;
   width: 560px;
-  background-image: url('img/accesories.png')
+  background-image: url("img/accesories.png");
 }
 .category__4 {
   height: 542px;
   width: 560px;
-  background-image: url('img/forkids.png')
+  background-image: url("img/forkids.png");
 }
 .category__content {
   height: 82px;
@@ -231,7 +231,7 @@ li {
   margin-top: 40px;
 }
 .product:hover .product__img {
-  filter: brightness(.4);
+  filter: brightness(0.4);
 }
 .product:hover {
   box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
@@ -283,4 +283,71 @@ li {
   bottom: 21px;
   right: 15px;
   display: none;
+}
+.feature {
+  margin-top: 130px;
+  height: 529px;
+  background-color: #222224;
+  background-clip: content-box;
+  margin-bottom: 100px;
+  display: flex;
+}
+.feature__left {
+  width: 767px;
+  background-image: url(img/features_eff.png), url(img/features.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.feature__right {
+  width: 433px;
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.feature__right:last-child {
+  padding-bottom: 60px;
+}
+
+.feature__item {
+  display: flex;
+  position: relative;
+  margin: 55px 40px 0 110px;
+}
+.feature__item_text {
+}
+.feature__item_h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fbfbfb;
+  padding-bottom: 16px;
+}
+.feature_item_p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fbfbfb;
+  line-height: 18px;
+}
+.feature__content {
+  margin: 150px 0 0 40px;
+}
+.feature__content_h1 {
+  font-size: 54px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.feature__content_h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.feature__content_h1-mini {
+  font-size: 54px;
+  font-weight: bold;
+  color: #f16d7f;
+}
+.feature__icon {
+  position: absolute;
+  left: -75px;
+  top: -7px;
 }
