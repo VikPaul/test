@@ -141,3 +141,146 @@ li {
   line-height: 33px;
   margin-top: 13px;
 }
+.category {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.category__left {
+  margin-right: 10px;
+}
+.category__item {
+  margin: 20px 0;
+  display: flex;
+}
+.category__1 {
+  height: 542px;
+  width: 560px;
+  background-image: url('img/forman.png')
+}
+.category__2 {
+  height: 261px;
+  width: 560px;
+  background-image: url('img/forwoman.png')
+}
+.category__3 {
+  height: 261px;
+  width: 560px;
+  background-image: url('img/accesories.png')
+}
+.category__4 {
+  height: 542px;
+  width: 560px;
+  background-image: url('img/forkids.png')
+}
+.category__content {
+  height: 82px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 26px;
+  padding: 16px 20px;
+}
+
+.category__heading {
+  font-size: 30px;
+  font-weight: 900;
+  color: #f16d7f;
+}
+
+.category__heading_mini {
+  font-size: 18px;
+  color: #222222;
+}
+.category__right {
+  margin-right: 10px;
+}
+.product-contain {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-box {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-box-heading {
+  text-align: center;
+}
+.product-box-content {
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+}
+.product-box-p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #9f9f9f;
+}
+.product-contain-browse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product {
+  width: 263px;
+  position: relative;
+  margin-top: 40px;
+}
+.product:hover .product__img {
+  filter: brightness(.4);
+}
+.product:hover {
+  box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+.product:hover .product__rait {
+  display: block;
+}
+.product:hover .product__add {
+  display: flex;
+}
+.product__img {
+  width: 100%;
+}
+.product__add {
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  height: 39px;
+  width: 123px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 97px;
+  left: 70px;
+  border: solid 1px #fff;
+}
+.product__add:hover {
+  box-shadow: 0px 0 5px #fff;
+}
+.product__content {
+  padding: 19px 15px;
+  position: relative;
+}
+.product__name {
+  font-size: 13px;
+  color: #222;
+  text-transform: uppercase;
+}
+.product__price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f16d7f;
+  margin-top: 17px;
+  text-transform: uppercase;
+}
+.product__rait {
+  position: absolute;
+  bottom: 21px;
+  right: 15px;
+  display: none;
+}
