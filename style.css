@@ -7,6 +7,9 @@
 body {
   font-family: "Lato", sans-serif;
 }
+input:focus {
+  outline: none;
+}
 .center {
   padding: 0 calc(50% - 600px);
 }
@@ -314,8 +317,6 @@ li {
   position: relative;
   margin: 55px 40px 0 110px;
 }
-.feature__item_text {
-}
 .feature__item_h1 {
   font-size: 20px;
   font-weight: bold;
@@ -350,4 +351,163 @@ li {
   position: absolute;
   left: -75px;
   top: -7px;
+}
+.subscribe {
+  height: 438px;
+  background: url(img/subscribebcg_eff.png), url(img/subscribebcg.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  margin-bottom: 123px;
+}
+.subscribe__left {
+  flex-basis: 50%;
+  border-right: 1px solid #fff;
+}
+.subscribe__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe__content {
+  flex-basis: 50%;
+}
+.subscribe__heading {
+  font-size: 24px;
+  font-weight: 400;
+  color: #222224;
+  text-transform: uppercase;
+}
+
+.subscribe__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #222224;
+  padding-bottom: 34px;
+  line-height: 24px;
+}
+
+.subscribe__button {
+  height: 46px;
+  width: 104px;
+  background-color: #f16d7f;
+  border-radius: 0 23px 23px 0;
+  border: none;
+  margin-left: -38px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.subscribe__input {
+  height: 46px;
+  width: 334px;
+  background-color: #e1e1e1;
+  border-radius: 23px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222224;
+  line-height: 54px;
+  padding: 0 66px 0 28px;
+}
+
+.subscribe__form {
+  display: flex;
+}
+.subscribe__left {
+  display: flex;
+  padding-top: 130px;
+}
+.subscribe__avatar {
+  width: 83px;
+  height: 83px;
+  margin-right: 28px;
+}
+.subscribe__review {
+  padding-right: 72px;
+}
+.subscribe__review-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #222224;
+  margin-bottom: 16px;
+}
+.subscribe__author {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f16d7f;
+}
+.subscribe__author-geo {
+  font-size: 12px;
+  font-weight: 300;
+  color: #222224;
+}
+.prefooter {
+  display: flex;
+  margin-bottom: 98px;
+}
+.prefooter__content {
+  flex-basis: 33%;
+}
+.prefooter__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #898989;
+  padding-top: 30px;
+}
+.prefooter__nav {
+  flex-basis: 66%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.prefooter_nav_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.prefooter_nav_list-h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f16d7f;
+  margin-bottom: 25px;
+}
+.prefooter__nav_link {
+  font-size: 16px;
+  font-weight: normal;
+  color: #898989;
+}
+.footer {
+  height: 75px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  font-size: 14px;
+  font-weight: bold;
+  color: #222224;
+}
+.social_icons {
+  display: flex;
+}
+.social_icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-weight: normal;
+  color: #b2b2b2;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  margin-right: 8px
+}
+.social_icons__link:hover {
+  background-color: #f16d7f;
+  color: #fff;
 }
