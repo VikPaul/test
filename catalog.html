@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8b56f8f9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Lesson One</title>
+    <title>Lesson SCSS</title>
 </head>
 <body>
     <header class="header center">
@@ -36,49 +37,17 @@
         <li class="nav__list"><a href="#" class="nav__link">Featured</a></li>
         <li class="nav__list"><a href="#" class="nav__link">Hot Deals</a></li>
     </nav>
-    <div class="promo center">
-        <div class="promo__content">
-            <h1 class="promo__content_h1">THE BRAND</h1>
-            <h2 class="promo__content_h2">OF LUXERIOUS <span class="promo__content_span">FASHION</span></h2>
-        </div>
-    </div>
-    <div class="category center">
-        <div class="category__left">
-            <div class="category__1 category__item">
-                <div class="category__content">
-                    <h2 class="category__heading category__heading_mini">HOT DEAL</h2>
-                    <h1 class="category__heading">FOR MEN</h1>
-                </div>
-            </div>
-            <div class="category__3 category__item">
-                <div class="category__content">
-                    <h2 class="category__heading category__heading_mini">LUXIROUS & trendy</h2>
-                    <h1 class="category__heading">ACCESORIES</h1>
-                </div>
-            </div>
-        </div>
-        <div class="category_right">
-            <div class="category__left">
-                <div class="category__2 category__item">
-                    <div class="category__content">
-                        <h2 class="category__heading category__heading_mini">30% offer</h2>
-                        <h1 class="category__heading">FOR WOMEN</h1>
-                    </div>
-                </div>
-                <div class="category__4 category__item">
-                    <div class="category__content">
-                        <h2 class="category__heading category__heading_mini">NEW ARRIVALS</h2>
-                        <h1 class="category__heading">FOR KIDS</h1>
-                    </div>
-                </div>
-            </div>
+    <div class="breadcrumbs">
+        <div class="breadcrumbs__heading">NEW ARRIVALS</div>
+        <div class="breadcrumbs__list">
+            <ul class="breadcrumbs__ul">
+                <li class="breadcrumbs_li"><a href="index.html" class="breadcrumbs__link">Home</a></li>
+                <li class="breadcrumbs_li"><a href="#" class="breadcrumbs__link">MAN</a></li>
+                <li class="breadcrumbs_li"><a href="#" class="breadcrumbs__link">NEW ARRIVALS</a></li>
+            </ul>
         </div>
     </div>
     <div class="product-contain center">
-        <div class="product-box-heading">
-            <h1 class="product-box-h1">Fetured Items</h1>
-            <p class="product-box-p">Shop for items based on what we featured in this week</p>
-        </div>
         <div class="product-box">
             <div class="product">
                 <a href="#"><img class="product__img" src="img/product1.png" alt=""></a>
@@ -153,7 +122,6 @@
                 <a href="#" class="product__add">Add to Cart</a>
             </div>
         </div>
-        <a href="#" class="product-contain-browse button">Browse All Products</a>
     </div>
     <div class="feature center">
         <div class="feature__left">
@@ -167,25 +135,90 @@
                 <div class="feature__icon"><img src="img/deliveryICON.png"></div>
                 <div class="feature__item_text">
                     <h1 class="feature__item_h1">Free Delivery</h1>
-                    <p class="feature_item_p">Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.</p>
+                    <p class="feature__item_p">Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.</p>
                 </div>
             </div>
             <div class="feature__item">
                 <div class="feature__icon"><img src="img/salesICON.png"></div>
                 <div class="feature__item_text">
                     <h1 class="feature__item_h1">Sales & discounts</h1>
-                    <p class="feature_item_p">Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.</p>
+                    <p class="feature__item_p">Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.</p>
                 </div>
             </div>
             <div class="feature__item">
                 <div class="feature__icon feature__icon-big"><img src="img/qualityICON.png"></div>
                 <div class="feature__item_text">
                     <h1 class="feature__item_h1">Quality assurance</h1>
-                    <p class="feature_item_p">Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.</p>
+                    <p class="feature__item_p">Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="subscribe center">
+        <div class="subscribe__left">
+            <img class="subscribe__avatar" src="img/avatar.png" alt="Bin">
+            <div class="subscribe__review">
+                <p class="subscribe__review-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <p class="subscribe__author">Bin Burhan</p>
+                <p class="subscribe__author-geo">Dhaka, Bd</p>
+            </div>
+        </div>
+        <div class="subscribe__right subscribe__content">
+            <h1 class="subscribe__heading">Subscribe</h1>
+            <h3 class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</h3>
+            <form class="subscribe__form">
+                <input class="subscribe__input" type="email" placeholder="Enter Your Email">
+                <input value="Subscribe" class="subscribe__button" type="button">
+            </form>
+        </div>
+    </div>
+    <div class="prefooter center">
+        <div class="prefooter__content">
+            <a href="#" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logoBrand">BRAND
+            </a>
+            <p class="prefooter__text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+            <p class="prefooter__text">Efficiently plagiarize 24/365 action items and focused infomediaries.Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        </div>
+        <nav class="prefooter__nav">
+            <ul class="prefooter__nav_list">
+                <p class="prefooter__nav_list-h1">COMPANY</p>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Home</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Shop</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">About</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">How It Works</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Contact</a></li>
+            </ul>
+            <ul class="prefooter__nav_list">
+                <p class="prefooter__nav_list-h1">INFORMATION</p>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Tearms & Condition</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Privacy Policy</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">How to Buy</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">How to Sell</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Promotion</a></li>
+            </ul>
+            <ul class="prefooter__nav_list">
+                <p class="prefooter__nav_list-h1">SHOP LIST</p>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Men</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Women</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Child</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Apparel</a></li>
+                <li class="prefooter__nav_list-item"><a href="#" class="prefooter__nav_link">Brows All</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer class="footer center">
+        <div class="footer__copyright">
+            &#169 2020  Brand  All Rights Reserved.
+        </div>
+        <div class="social_icons">
+            <a href="#" class="social_icons__link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social_icons__link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social_icons__link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social_icons__link"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" class="social_icons__link"><i class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
-<!-- margin: 55px 40px 0 110px; -->
